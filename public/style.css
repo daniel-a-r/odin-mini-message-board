@@ -127,6 +127,6 @@ ul.message-details-list {
 
   button[type='submit'] {
     width: max-content;
-    grid-column: 1 / 3;
+    grid-column: 2;
   }
 }
