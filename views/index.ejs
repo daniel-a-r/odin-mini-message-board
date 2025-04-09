@@ -1,7 +1,13 @@
 <%- include('./partials/header', { title }) %>
-  <ul class="message-list">
-    <% messages.forEach(message => { %>
-      <%- include('./partials/message', { message }) %>
-    <% }) %>
-  </ul>
+  <% if (messages.length) { %>
+    <ul class="message-list">
+      <% messages.forEach(message => { %>
+        <%- include('./partials/message', { message }) %>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <h1>No messages sent yet.</h1>
+    <h1>Be the first</h1>
+  <% } %>
+  
 <%- include('./partials/footer') %>
