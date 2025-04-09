@@ -55,11 +55,12 @@ label {
   justify-self: end;
 }
 
-label[for="user"] {
+label[for='user'] {
   align-self: center;
 }
 
-input, textarea {
+input,
+textarea {
   border: solid 1px grey;
   border-radius: 0.25rem;
   padding: 0.2rem 0.4rem;
@@ -85,7 +86,7 @@ button {
     text-align: start;
   }
 
-  &[type="submit"] {
+  &[type='submit'] {
     width: max-content;
     grid-column: 1 / 3;
   }
