@@ -1,0 +1,8 @@
+<%- include('./partials/header', { title }) %>
+  <ul class="message-details-list">
+    <li><%= `user: ${message.user}` %></li>
+    <li><%= `message: ${message.content}` %></li>
+    <li><%= `timestamp: ${message.timestamp}` %></li>
+    <li><%= `message id: ${message.id}` %></li>
+  </ul>
+<%- include('./partials/footer') %>
